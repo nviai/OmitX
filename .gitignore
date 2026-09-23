@@ -1,0 +1,12 @@
+omitx-backend/
+.build/
+build/
+.swiftpm/
+*.xcodeproj/
+Archived/
+.DS_Store
+__pycache__/
+
+# Paid engine — separate private repository, NEVER commit it here.
+# The leading "/" matters: plain "Pro/" would also match Sources/OmitX/Pro/, which is public.
+/Pro/

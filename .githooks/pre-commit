@@ -1,0 +1,17 @@
+#!/bin/sh
+# Keep the private repositories nested in this folder (Pro/, omitx-backend/) out of the public one.
+# .gitignore already skips them; this catches a forced add (git add -f) or an edited .gitignore.
+# Enable with: git config core.hooksPath .githooks
+leaked=$(git diff --cached --name-only | grep -E '^(Pro|omitx-backend)/' || true)
+if [ -n "$leaked" ]; then
+    echo "✖ About to commit private code into the public repository:"
+    echo "$leaked" | sed 's/^/    /'
+    echo "  Pro/ and omitx-backend/ have their own git repositories."
+    echo "  Unstage them with: git restore --staged Pro/ omitx-backend/"
+    exit 1
+fi
+# Signing keys must never land in any repository
+if git diff --cached -U0 | grep -qE "BEGIN (OPENSSH |EC |RSA )?PRIVATE KEY"; then
+    echo "✖ A private key was found in the staged changes."
+    exit 1
+fi

@@ -1,0 +1,3642 @@
+[
+ {
+  "key": "\"Xoá vĩnh viễn\" giải phóng dung lượng ngay. \"Thùng rác\" an toàn hơn nhưng phải dọn Thùng rác mới lấy lại dung lượng. Lệnh CLI (docker, brew, simctl) không bị ảnh hưởng bởi tuỳ chọn này.",
+  "placeholders": [],
+  "context": [
+   "Text(\"\\\"Xoá vĩnh viễn\\\" giải phóng dung lượng ngay. \\\"Thùng rác\\\" an toàn hơn nhưng phải dọn Thùng rác mới lấy lại dung lượng. Lệnh CLI (docker, brew, simctl) k"
+  ],
+  "count": false
+ },
+ {
+  "key": "$ %@ → xoá %@",
+  "placeholders": [
+   "@",
+   "@"
+  ],
+  "context": [
+   "case .commandThenDelete(let c, let u): L(\"$ \\(c.display) → xoá \\(u.path.abbreviatingHome)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "%@ mục, %@ đang dùng, tổng %@",
+  "placeholders": [
+   "@",
+   "@",
+   "@"
+  ],
+  "context": [
+   "let count = L(\"\\(String(describing: obj[\"TotalCount\"] ?? \"?\")) mục, \\(String(describing: obj[\"Active\"] ?? \"?\")) đang dùng, tổng \\(total)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "%lld hạng mục",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   ": L(\"\\(rule.query.modules.count) hạng mục\")) {"
+  ],
+  "count": true
+ },
+ {
+  "key": "%lld mục",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Text(\"\\(ms.result.items.count) mục\").font(.caption).foregroundStyle(.secondary)",
+   "Text(\"\\(model.entries.count) mục\").foregroundStyle(.secondary)"
+  ],
+  "count": true
+ },
+ {
+  "key": "%lld mục NGUY HIỂM — có thể mất dữ liệu thật",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "warningBox(.red, L(\"\\(dangerous.count) mục NGUY HIỂM — có thể mất dữ liệu thật\"),"
+  ],
+  "count": true
+ },
+ {
+  "key": "%lld mục cần cân nhắc",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "warningBox(.orange, L(\"\\(caution.count) mục cần cân nhắc\"), L(\"Sẽ phải tải/build lại, hoặc mất cấu hình phụ.\"))"
+  ],
+  "count": true
+ },
+ {
+  "key": "%lld mục không xoá được (đang bị dùng hoặc thiếu quyền)",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "output = errors.isEmpty ? nil : L(\"\\(errors.count) mục không xoá được (đang bị dùng hoặc thiếu quyền)\")"
+  ],
+  "count": true
+ },
+ {
+  "key": "%lld mục sẽ bị xoá",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "detail: L(\"\\(count) mục sẽ bị xoá\")))"
+  ],
+  "count": true
+ },
+ {
+  "key": "%lld mục · %@ có thể dọn. Dọn ngay?",
+  "placeholders": [
+   "d",
+   "@"
+  ],
+  "context": [
+   "body: L(\"\\(items) mục · \\(ByteFormat.string(bytes)) có thể dọn. Dọn ngay?\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "%lld mục · %@ · %@",
+  "placeholders": [
+   "d",
+   "@",
+   "@"
+  ],
+  "context": [
+   "return L(\"\\(items.count) mục · \\(ByteFormat.string(items.reclaimable)) · \\(groups.joined(separator: \", \"))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "%lld ứng dụng",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Text(\"\\(filteredApps.count) ứng dụng\")"
+  ],
+  "count": true
+ },
+ {
+  "key": "%lld/%lld mục thành công",
+  "placeholders": [
+   "d",
+   "d"
+  ],
+  "context": [
+   "Text(\"\\(entry.outcomes.count - entry.failures.count)/\\(entry.outcomes.count) mục thành công\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "'%@' lỗi (exit %d): %@",
+  "placeholders": [
+   "@",
+   "d",
+   "@"
+  ],
+  "context": [
+   "L(\"'\\(cmd)' lỗi (exit \\(r.status)): \\(r.combined.trimmingCharacters(in: .whitespacesAndNewlines).suffix(400))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "/Library/Caches (hệ thống)",
+  "placeholders": [],
+  "context": [
+   "for (path, title) in [(\"/Library/Caches\", L(\"/Library/Caches (hệ thống)\")), (\"/Library/Logs\", L(\"/Library/Logs (hệ thống)\"))] {"
+  ],
+  "count": false
+ },
+ {
+  "key": "/Library/Logs (hệ thống)",
+  "placeholders": [],
+  "context": [
+   "for (path, title) in [(\"/Library/Caches\", L(\"/Library/Caches (hệ thống)\")), (\"/Library/Logs\", L(\"/Library/Logs (hệ thống)\"))] {"
+  ],
+  "count": false
+ },
+ {
+  "key": "/tmp và $TMPDIR: log, scratch của AI agent, test, build tool — bỏ qua mục đang được dùng",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"/tmp và $TMPDIR: log, scratch của AI agent, test, build tool — bỏ qua mục đang được dùng\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "1 năm",
+  "placeholders": [],
+  "context": [
+   "Text(\"1 năm\").tag(365)",
+   "Text(\"1 năm\").tag(365)"
+  ],
+  "count": false
+ },
+ {
+  "key": "180 ngày",
+  "placeholders": [],
+  "context": [
+   "Text(\"180 ngày\").tag(180)",
+   "Text(\"180 ngày\").tag(180)"
+  ],
+  "count": false
+ },
+ {
+  "key": "30 ngày",
+  "placeholders": [],
+  "context": [
+   "Text(\"30 ngày\").tag(30)",
+   "Text(\"30 ngày\").tag(30)"
+  ],
+  "count": false
+ },
+ {
+  "key": "7 ngày",
+  "placeholders": [],
+  "context": [
+   "Text(\"7 ngày\").tag(7)",
+   "Text(\"7 ngày\").tag(7)"
+  ],
+  "count": false
+ },
+ {
+  "key": "90 ngày",
+  "placeholders": [],
+  "context": [
+   "Text(\"90 ngày\").tag(90)",
+   "Text(\"90 ngày\").tag(90)"
+  ],
+  "count": false
+ },
+ {
+  "key": "AVD dùng image này sẽ không chạy được",
+  "placeholders": [],
+  "context": [
+   "note: L(\"AVD dùng image này sẽ không chạy được\"), selected: false))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Agent khác",
+  "placeholders": [],
+  "context": [
+   "let other = L(\"Agent khác\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "An toàn",
+  "placeholders": [],
+  "context": [
+   "case .safe: L(\"An toàn\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "App Electron (Slack, Postman...)",
+  "placeholders": [],
+  "context": [
+   "let electron = L(\"App Electron (Slack, Postman...)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Apple Intelligence chưa hỗ trợ ngôn ngữ hệ thống hiện tại.",
+  "placeholders": [],
+  "context": [
+   "case .unsupportedLanguage: L(\"Apple Intelligence chưa hỗ trợ ngôn ngữ hệ thống hiện tại.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Backup thiết bị %@…",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "title: { L(\"Backup thiết bị \\($0.lastPathComponent.prefix(8))…\") })"
+  ],
+  "count": false
+ },
+ {
+  "key": "Build lại khi mở project",
+  "placeholders": [],
+  "context": [
+   "specs += ScanKit.children(of: derived, group: \"DerivedData\", note: L(\"Build lại khi mở project\"), blocking: xcode,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Build tools",
+  "placeholders": [],
+  "context": [
+   "let build = L(\"Build tools\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản backup iPhone/iPad qua Finder",
+  "placeholders": [],
+  "context": [
+   "safety: .danger, note: L(\"Bản backup iPhone/iPad qua Finder\"), selected: false,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản build này chưa có khoá kiểm giấy phép.",
+  "placeholders": [],
+  "context": [
+   "case \"no_key\": L(\"Bản build này chưa có khoá kiểm giấy phép.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản build này không kèm phần Pro.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Bản build này không kèm phần Pro.\")",
+   "case .none: Pro.isLinked ? L(\"Chưa kích hoạt\") : L(\"Bản build này không kèm phần Pro.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản dùng thử đã hết hạn.",
+  "placeholders": [],
+  "context": [
+   "case \"trial_expired\": L(\"Bản dùng thử đã hết hạn.\")",
+   "Text(\"Bản dùng thử đã hết hạn.\").font(.callout).foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản mới nhất",
+  "placeholders": [],
+  "context": [
+   "note: newest ? L(\"Bản mới nhất\") : note, selected: false)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản mới nhất — Xcode sẽ tạo lại khi cắm thiết bị",
+  "placeholders": [],
+  "context": [
+   "note: isNewest ? L(\"Bản mới nhất — Xcode sẽ tạo lại khi cắm thiết bị\") : L(\"Tự tạo lại khi cắm thiết bị chạy phiên bản này\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản mới nhất — giữ lại",
+  "placeholders": [],
+  "context": [
+   "note: newest ? L(\"Bản mới nhất — giữ lại\") : L(\"Project cần bản này sẽ tự tải lại\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bản quyền Pro",
+  "placeholders": [],
+  "context": [
+   "Section(\"Bản quyền Pro\") {",
+   ".tabItem { Label(\"Bản quyền Pro\", systemImage: \"key\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bật Apple Intelligence trong Cài đặt hệ thống để dùng trợ lý.",
+  "placeholders": [],
+  "context": [
+   "case .notEnabled: L(\"Bật Apple Intelligence trong Cài đặt hệ thống để dùng trợ lý.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bật theo dõi & dọn tự động",
+  "placeholders": [],
+  "context": [
+   "Toggle(\"Bật theo dõi & dọn tự động\", isOn: $model.settings.enabled)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bắt đầu cuộc trò chuyện mới",
+  "placeholders": [],
+  "context": [
+   ".help(L(\"Bắt đầu cuộc trò chuyện mới\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bỏ chọn tất cả",
+  "placeholders": [],
+  "context": [
+   "Button(\"Bỏ chọn tất cả\") { state.setSelected(all, false) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Bỏ qua",
+  "placeholders": [],
+  "context": [
+   "let skip = UNNotificationAction(identifier: Action.skip, title: L(\"Bỏ qua\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cache",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/Developer/CoreSimulator/Caches\", \"CoreSimulator cache (dyld)\", group: L(\"Cache\"),",
+   "PathSpec(home: \"Library/Logs/CoreSimulator\", \"CoreSimulator logs\", group: L(\"Cache\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cache Xcode",
+  "placeholders": [],
+  "context": [
+   "let cacheGroup = L(\"Cache Xcode\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cache của docker build / BuildKit — build lần sau chậm hơn",
+  "placeholders": [],
+  "context": [
+   "L(\"Cache của docker build / BuildKit — build lần sau chậm hơn\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cache hệ thống của Apple — tự tạo lại, nhưng có thể đang được dùng",
+  "placeholders": [],
+  "context": [
+   "note: isApple ? L(\"Cache hệ thống của Apple — tự tạo lại, nhưng có thể đang được dùng\") : nil,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chat chọn sẵn các mục rồi mở bảng xác nhận để bạn duyệt.",
+  "placeholders": [],
+  "context": [
+   "case .propose: L(\"Chat chọn sẵn các mục rồi mở bảng xác nhận để bạn duyệt.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chat dọn luôn các mục mức An toàn, không hỏi lại.",
+  "placeholders": [],
+  "context": [
+   "case .auto: L(\"Chat dọn luôn các mục mức An toàn, không hỏi lại.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Checkpoint dùng cho /rewind",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Checkpoint dùng cho /rewind\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chung",
+  "placeholders": [],
+  "context": [
+   ".tabItem { Label(\"Chung\", systemImage: \"gearshape\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chuyển %@ vào Thùng rác",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "case .recycle(let u): L(\"Chuyển \\(u.path.abbreviatingHome) vào Thùng rác\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chuyển vào Thùng rác",
+  "placeholders": [],
+  "context": [
+   "case .trash: L(\"Chuyển vào Thùng rác\")",
+   "size: app.size, safety: .caution, note: L(\"Chuyển vào Thùng rác\"), action: .recycle(app.url),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chuyển vào Thùng rác?",
+  "placeholders": [],
+  "context": [
+   ".alert(\"Chuyển vào Thùng rác?\", isPresented: Binding(get: { trashTarget != nil }, set: { if !$0 { trashTarget = nil } }),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chuyển vào Thùng rác…",
+  "placeholders": [],
+  "context": [
+   "Button(\"Chuyển vào Thùng rác…\", role: .destructive) { trashTarget = entry }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa chọn thư mục để quét — vào Cài đặt để thêm.",
+  "placeholders": [],
+  "context": [
+   "if roots.isEmpty { notes = [L(\"Chưa chọn thư mục để quét — vào Cài đặt để thêm.\")] }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa cài Docker CLI.",
+  "placeholders": [],
+  "context": [
+   "notes.append(L(\"Chưa cài Docker CLI.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa cài Homebrew.",
+  "placeholders": [],
+  "context": [
+   "guard Shell.has(\"brew\") else { return ScanResult(notes: [L(\"Chưa cài Homebrew.\")]) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa cài Xcode / Command Line Tools.",
+  "placeholders": [],
+  "context": [
+   "return ScanResult(notes: [L(\"Chưa cài Xcode / Command Line Tools.\")])"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa có hội thoại nào.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Chưa có hội thoại nào.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa có quy tắc nào.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Chưa có quy tắc nào.\").foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa dọn gì trong phiên này",
+  "placeholders": [],
+  "context": [
+   "ContentUnavailableView(\"Chưa dọn gì trong phiên này\", systemImage: \"clock\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa kích hoạt",
+  "placeholders": [],
+  "context": [
+   "case .none: Pro.isLinked ? L(\"Chưa kích hoạt\") : L(\"Bản build này không kèm phần Pro.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa liên lạc được máy chủ — còn dùng được %lld ngày",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Text(\"Chưa liên lạc được máy chủ — còn dùng được \\(days) ngày\").font(.callout).foregroundStyle(.orange)",
+   "case .grace(let days): L(\"Chưa liên lạc được máy chủ — còn dùng được \\(days) ngày\")"
+  ],
+  "count": true
+ },
+ {
+  "key": "Chưa quét",
+  "placeholders": [],
+  "context": [
+   "case .idle: Text(\"Chưa quét\").font(.caption).foregroundStyle(.secondary)",
+   "Text(ms.scannedAt.map { L(\"Quét \\($0.relative)\") } ?? L(\"Chưa quét\")).font(.caption).foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa từng được dùng.",
+  "placeholders": [],
+  "context": [
+   "?? L(\"Chưa từng được dùng.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chưa yêu cầu đổi máy.",
+  "placeholders": [],
+  "context": [
+   "case \"no_challenge\": L(\"Chưa yêu cầu đổi máy.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chạy bằng `swift run` nên chưa đăng ký được khởi động cùng máy. Cần bản build .app.",
+  "placeholders": [],
+  "context": [
+   "Label(\"Chạy bằng `swift run` nên chưa đăng ký được khởi động cùng máy. Cần bản build .app.\","
+  ],
+  "count": false
+ },
+ {
+  "key": "Chạy không có người giám sát nên quy tắc chỉ đụng tới mục mức An toàn, bỏ qua mục cần mật khẩu admin và mục đang bị Xcode / emulator chiếm.",
+  "placeholders": [],
+  "context": [
+   "? \"Chạy không có người giám sát nên quy tắc chỉ đụng tới mục mức An toàn, bỏ qua mục cần mật khẩu admin và mục đang bị Xcode / emulator chiếm.\""
+  ],
+  "count": false
+ },
+ {
+  "key": "Chạy quy tắc khi còn dưới",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Chạy quy tắc khi còn dưới\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chạy thử",
+  "placeholders": [],
+  "context": [
+   "Section(\"Chạy thử\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chế độ Tự chạy: tôi sẽ dọn luôn các mục mức An toàn.",
+  "placeholders": [],
+  "context": [
+   "? \"Chế độ Tự chạy: tôi sẽ dọn luôn các mục mức An toàn.\""
+  ],
+  "count": false
+ },
+ {
+  "key": "Chỉ báo",
+  "placeholders": [],
+  "context": [
+   "case .notifyOnly: L(\"Chỉ báo\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chỉ gửi thông báo, không xoá gì.",
+  "placeholders": [],
+  "context": [
+   ": \"Chỉ gửi thông báo, không xoá gì.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chỉ mục không đụng tới đã lâu",
+  "placeholders": [],
+  "context": [
+   "Toggle(\"Chỉ mục không đụng tới đã lâu\", isOn: Binding("
+  ],
+  "count": false
+ },
+ {
+  "key": "Chỉ xoá app — nên chọn thêm file liên quan",
+  "placeholders": [],
+  "context": [
+   ".help(appOnly ? L(\"Chỉ xoá app — nên chọn thêm file liên quan\") : \"\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chỉ xoá package không còn project nào tham chiếu (an toàn). Dung lượng chỉ biết sau khi chạy.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Chỉ xoá package không còn project nào tham chiếu (an toàn). Dung lượng chỉ biết sau khi chạy.\")))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chỉ đề xuất mục của bạn, không chứa socket, không bị process nào mở, và không đổi trong 1 giờ qua. Mục không đổi hơn 3 ngày được chọn sẵn.",
+  "placeholders": [],
+  "context": [
+   "var notes = [L(\"Chỉ đề xuất mục của bạn, không chứa socket, không bị process nào mở, và không đổi trong 1 giờ qua. Mục không đổi hơn 3 ngày được chọn sẵn.\")]"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn",
+  "placeholders": [],
+  "context": [
+   "Menu(\"Chọn\") {",
+   "panel.prompt = L(\"Chọn\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn mặc định",
+  "placeholders": [],
+  "context": [
+   "Button(\"Chọn mặc định\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn một thư mục để phân tích",
+  "placeholders": [],
+  "context": [
+   "Text(\"Chọn một thư mục để phân tích\").font(.title2.bold())"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn một ứng dụng",
+  "placeholders": [],
+  "context": [
+   "ContentUnavailableView(\"Chọn một ứng dụng\", systemImage: \"app.dashed\","
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn sẵn artifact của project không đụng tới hơn %lld ngày (theo git / file marker).",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "var notes = [L(\"Chọn sẵn artifact của project không đụng tới hơn \\(staleDays) ngày (theo git / file marker).\")]"
+  ],
+  "count": true
+ },
+ {
+  "key": "Chọn sẵn project không đụng tới hơn",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Chọn sẵn project không đụng tới hơn\", selection: $state.staleDays) {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn tất cả",
+  "placeholders": [],
+  "context": [
+   "Button(\"Chọn tất cả\") { state.setSelected(all, true) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn tất cả mục An toàn",
+  "placeholders": [],
+  "context": [
+   "Button(\"Chọn tất cả mục An toàn\") { state.setSelected(all.filter { $0.safety == .safe }, true) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chọn…",
+  "placeholders": [],
+  "context": [
+   "LocationCard(icon: \"folder.badge.plus\", title: L(\"Chọn…\"), subtitle: \"\") {",
+   "Button(\"Chọn…\") { if let u = pickFolders(multiple: false).first { model.open(u) } }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chứa bản build đã ký + dSYM để symbolicate crash. Chỉ xoá khi chắc chắn.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Chứa bản build đã ký + dSYM để symbolicate crash. Chỉ xoá khi chắc chắn.\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Chứa link project Vercel",
+  "placeholders": [],
+  "context": [
+   "Rule(name: \".vercel\", markers: jsMarkers, kind: \"Vercel\", safety: .caution, note: L(\"Chứa link project Vercel\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Claude Code, Codex, Gemini CLI, opencode, Cursor CLI, Copilot CLI: cache, log, lịch sử phiên cũ",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"Claude Code, Codex, Gemini CLI, opencode, Cursor CLI, Copilot CLI: cache, log, lịch sử phiên cũ\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Coi là \"cũ\" sau %lld ngày",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Stepper(\"Coi là \\\"cũ\\\" sau \\(state.staleDays) ngày\", value: $state.staleDays, in: 1...730, step: 7)"
+  ],
+  "count": true
+ },
+ {
+  "key": "Composer cache (cũ)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".composer/cache\", L(\"Composer cache (cũ)\"), group: other),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Container đã dừng",
+  "placeholders": [],
+  "context": [
+   "(L(\"Container đã dừng\"), [\"container\", \"prune\", \"-f\"], .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Copy lệnh",
+  "placeholders": [],
+  "context": [
+   "Button(\"Copy lệnh\") { Finder.copy(cmd.display) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Copy đường dẫn",
+  "placeholders": [],
+  "context": [
+   "Button(\"Copy đường dẫn\") { Finder.copy(entry.url.path) }",
+   "Button(\"Copy đường dẫn\") { Finder.copy(url.path) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Crash reports",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/Application Support/CrashReporter\", L(\"Crash reports\"), group: g, contentsOnly: true),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cuộc trò chuyện đã dài, tôi bắt đầu lại ngữ cảnh.",
+  "placeholders": [],
+  "context": [
+   "note(L(\"Cuộc trò chuyện đã dài, tôi bắt đầu lại ngữ cảnh.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Các cache dev (pip, CocoaPods, Yarn...) trong ~/Library/Caches cũng xuất hiện ở module tương ứng — chỉ tính 1 lần.",
+  "placeholders": [],
+  "context": [
+   "notes.append(L(\"Các cache dev (pip, CocoaPods, Yarn...) trong ~/Library/Caches cũng xuất hiện ở module tương ứng — chỉ tính 1 lần.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Các formula lớn nhất: xem mục \"Phân tích dung lượng\" → /opt/homebrew/Cellar.",
+  "placeholders": [],
+  "context": [
+   "return ScanResult(items: items, notes: [L(\"Các formula lớn nhất: xem mục \\\"Phân tích dung lượng\\\" → /opt/homebrew/Cellar.\")])"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cách xoá",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Cách xoá\", selection: $state.deleteMode) {",
+   "Section(\"Cách xoá\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cách xoá file",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Cách xoá file\", selection: $state.deleteMode) {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cân nhắc",
+  "placeholders": [],
+  "context": [
+   "case .caution: L(\"Cân nhắc\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Còn bao nhiêu dung lượng trống?",
+  "placeholders": [],
+  "context": [
+   "[L(\"Còn bao nhiêu dung lượng trống?\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Còn trống %@ / %@",
+  "placeholders": [
+   "@",
+   "@"
+  ],
+  "context": [
+   "Text(\"Còn trống \\(ByteFormat.string(available)) / \\(ByteFormat.string(total))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Còn trống %@ / %@.",
+  "placeholders": [
+   "@",
+   "@"
+  ],
+  "context": [
+   "return L(\"Còn trống \\(ByteFormat.string(volume.available)) / \\(ByteFormat.string(volume.total)).\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Có %lld mục · %@ đang chiếm chỗ.",
+  "placeholders": [
+   "d",
+   "@"
+  ],
+  "context": [
+   "post(title: rule.name, body: L(\"Có \\(items) mục · \\(ByteFormat.string(bytes)) đang chiếm chỗ.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Có thể chứa phiên đăng nhập Expo",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".expo\", \"Expo cache\", group: build, safety: .caution, note: L(\"Có thể chứa phiên đăng nhập Expo\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Có thể dọn",
+  "placeholders": [],
+  "context": [
+   "stat(\"Có thể dọn\", ByteFormat.string(state.grandTotal), .green)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Có thể dọn %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "if reclaim > 0 { legend(.green, L(\"Có thể dọn \\(ByteFormat.string(reclaim))\")) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Công cụ",
+  "placeholders": [],
+  "context": [
+   "Section(\"Công cụ\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cũ hơn",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Cũ hơn\", selection: Binding(get: { rule.query.staleDays ?? 30 },"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cảnh báo khi còn dưới",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Cảnh báo khi còn dưới\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cảnh báo trước khi ổ cứng đầy và tự dọn theo quy tắc bạn đặt, kể cả khi đã đóng cửa sổ OmitX.",
+  "placeholders": [],
+  "context": [
+   "case .automation: L(\"Cảnh báo trước khi ổ cứng đầy và tự dọn theo quy tắc bạn đặt, kể cả khi đã đóng cửa sổ OmitX.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cấp quyền Full Disk Access cho OmitX để đo được Thùng rác, Mail, backup iPhone.",
+  "placeholders": [],
+  "context": [
+   "notes.append(L(\"Cấp quyền Full Disk Access cho OmitX để đo được Thùng rác, Mail, backup iPhone.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cấu hình %@ (bản cũ)",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "specs.append(PathSpec(c, L(\"Cấu hình \\(c.lastPathComponent) (bản cũ)\"), group: a, safety: .caution,",
+   "specs.append(PathSpec(old, L(\"Cấu hình \\(old.lastPathComponent) (bản cũ)\"), group: group, safety: .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cấu hình, đăng nhập, skills, plugins và memory của các agent không bao giờ bị xoá.",
+  "placeholders": [],
+  "context": [
+   "L(\"Cấu hình, đăng nhập, skills, plugins và memory của các agent không bao giờ bị xoá.\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cần duyệt trong System Settings",
+  "placeholders": [],
+  "context": [
+   "Label(\"Cần duyệt trong System Settings\", systemImage: \"exclamationmark.triangle.fill\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Cần quyền admin",
+  "placeholders": [],
+  "context": [
+   "id: \"admin:\\(path)\", title: title, group: L(\"Cần quyền admin\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "CẨN THẬN: volume có thể chứa dữ liệu database. Chỉ xoá volume không gắn container nào.",
+  "placeholders": [],
+  "context": [
+   "L(\"CẨN THẬN: volume có thể chứa dữ liệu database. Chỉ xoá volume không gắn container nào.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Danh sách todo của các phiên cũ",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Danh sách todo của các phiên cũ\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Device mồ côi %@…",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "PathSpec($0, L(\"Device mồ côi \\($0.lastPathComponent.prefix(8))…\"), group: L(\"Simulator không khả dụng\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Docker Desktop: muốn thu nhỏ file ổ đĩa ảo (Docker.raw) vào Settings → Resources → Disk usage limit.",
+  "placeholders": [],
+  "context": [
+   "notes.append(L(\"Docker Desktop: muốn thu nhỏ file ổ đĩa ảo (Docker.raw) vào Settings → Resources → Disk usage limit.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Docker daemon chưa chạy (Docker Desktop / OrbStack / Colima). Mở lên rồi quét lại.",
+  "placeholders": [],
+  "context": [
+   "notes.append(L(\"Docker daemon chưa chạy (Docker Desktop / OrbStack / Colima). Mở lên rồi quét lại.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Docker không có gì để dọn.",
+  "placeholders": [],
+  "context": [
+   "if items.isEmpty { notes.append(L(\"Docker không có gì để dọn.\")) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dung lượng",
+  "placeholders": [],
+  "context": [
+   "TableColumn(\"Dung lượng\", value: \\.sortSize) { e in",
+   "case .size: \"Dung lượng\""
+  ],
+  "count": false
+ },
+ {
+  "key": "Dùng CDN (mặc định từ 1.8) thì không cần. Nếu dùng spec repo riêng phải `pod repo add` lại.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Dùng CDN (mặc định từ 1.8) thì không cần. Nếu dùng spec repo riêng phải `pod repo add` lại.\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dùng lần cuối: %@.",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "let lastUsedText = lastUsed.map { L(\"Dùng lần cuối: \\($0.formatted(date: .abbreviated, time: .omitted)).\") }",
+   "if let d = app.lastUsed { Text(\"·\"); Text(L(\"Dùng lần cuối: \\(d.relative).\"))}"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dùng thử 14 ngày",
+  "placeholders": [],
+  "context": [
+   "Button(\"Dùng thử 14 ngày\", action: startTrial).disabled(busy)",
+   "Button(\"Dùng thử 14 ngày\", action: startTrial)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dọn %lld mục",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Text(\"Dọn \\(items.count) mục\").font(.title2.bold())"
+  ],
+  "count": true
+ },
+ {
+  "key": "Dọn Xcode và simulator đi",
+  "placeholders": [],
+  "context": [
+   "L(\"Dọn Xcode và simulator đi\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dọn cái gì",
+  "placeholders": [],
+  "context": [
+   "Section(\"Dọn cái gì\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dọn dẹp",
+  "placeholders": [],
+  "context": [
+   "Text(\"Dọn dẹp\").frame(minWidth: 80)",
+   "Label(\"Dọn dẹp\", systemImage: \"trash\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dọn dẹp máy Mac cho developer",
+  "placeholders": [],
+  "context": [
+   "Text(\"Dọn dẹp máy Mac cho developer\").font(.largeTitle.bold())"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dọn gì?",
+  "placeholders": [],
+  "context": [
+   "TextField(\"Dọn gì?\", text: $model.input, axis: .vertical)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dọn ngay",
+  "placeholders": [],
+  "context": [
+   "let clean = UNNotificationAction(identifier: Action.clean, title: L(\"Dọn ngay\"), options: [])",
+   "case .deleteNow: L(\"Dọn ngay\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dọn sạch Thùng rác — không khôi phục được",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Dọn sạch Thùng rác — không khôi phục được\"), contentsOnly: true, selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dừng Gradle daemon rồi xoá. Lần build sau sẽ tải lại dependency.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Dừng Gradle daemon rồi xoá. Lần build sau sẽ tải lại dependency.\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Dữ liệu lớn",
+  "placeholders": [],
+  "context": [
+   "let big = L(\"Dữ liệu lớn\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Editor khác",
+  "placeholders": [],
+  "context": [
+   "let other = L(\"Editor khác\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Editor updater cache",
+  "placeholders": [],
+  "context": [
+   "specs.append(PathSpec(home: \"Library/Caches/\\(sub)\", \"Updater/cache: \\(sub)\", group: L(\"Editor updater cache\")))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Engine, Dart SDK, artifacts iOS/Android — lệnh flutter kế tiếp sẽ tải lại (~2-4 GB)",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Engine, Dart SDK, artifacts iOS/Android — lệnh flutter kế tiếp sẽ tải lại (~2-4 GB)\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Extension cũ: %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "specs.append(PathSpec(obsolete, L(\"Extension cũ: \\(obsolete.lastPathComponent)\"), group: \"\\(name) extensions\","
+  ],
+  "count": false
+ },
+ {
+  "key": "File cập nhật iOS (.ipsw)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/iTunes/iPhone Software Updates\", L(\"File cập nhật iOS (.ipsw)\"), group: big),"
+  ],
+  "count": false
+ },
+ {
+  "key": "File cập nhật iPadOS (.ipsw)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/iTunes/iPad Software Updates\", L(\"File cập nhật iPadOS (.ipsw)\"), group: big),"
+  ],
+  "count": false
+ },
+ {
+  "key": "File nhỏ không đổi hơn 3 ngày: %lld",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "id: \"temp-loose:\" + dir.path, title: L(\"File nhỏ không đổi hơn 3 ngày: \\(stale.count)\"),"
+  ],
+  "count": true
+ },
+ {
+  "key": "File tạm (/tmp)",
+  "placeholders": [],
+  "context": [
+   "let title = L(\"File tạm (/tmp)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Gem cài trong bản này sẽ mất",
+  "placeholders": [],
+  "context": [
+   "specs += ScanKit.children(of: dir, group: ruby, safety: .caution, note: L(\"Gem cài trong bản này sẽ mất\"), selected: false,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Giải phóng %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Text(\"Giải phóng \\(ByteFormat.string(entry.freed))\").monospacedDigit()"
+  ],
+  "count": false
+ },
+ {
+  "key": "Giải phóng khoảng %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Text(\"Giải phóng khoảng \\(ByteFormat.string(items.reduce(0) { $0 + $1.size }))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Giải phóng ngay bây giờ",
+  "placeholders": [],
+  "context": [
+   "Text(\"Giải phóng ngay bây giờ\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Giấy phép không dùng được trên máy này.",
+  "placeholders": [],
+  "context": [
+   "case \"bad_token\", \"wrong_machine\": L(\"Giấy phép không dùng được trên máy này.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Giới hạn dung lượng mỗi lần chạy",
+  "placeholders": [],
+  "context": [
+   "Toggle(\"Giới hạn dung lượng mỗi lần chạy\", isOn: $capEnabled)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Global package cài trong bản này sẽ mất",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Global package cài trong bản này sẽ mất\"), selected: false,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Gradle caches & wrapper cũ, Android SDK (system images, build-tools, NDK), AVD, Android Studio",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"Gradle caches & wrapper cũ, Android SDK (system images, build-tools, NDK), AVD, Android Studio\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Gradle daemon đang chạy — app sẽ tự dừng (pkill) trước khi xoá Gradle caches.",
+  "placeholders": [],
+  "context": [
+   "if Shell.isRunning(\"GradleDaemon\") { notes.append(L(\"Gradle daemon đang chạy — app sẽ tự dừng (pkill) trước khi xoá Gradle caches.\")) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Gõ yêu cầu thay vì tick từng mục. Trợ lý quét, chọn sẵn rồi mở bảng xác nhận cho bạn duyệt.",
+  "placeholders": [],
+  "context": [
+   "case .chat: L(\"Gõ yêu cầu thay vì tick từng mục. Trợ lý quét, chọn sẵn rồi mở bảng xác nhận cho bạn duyệt.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Gỡ cài đặt",
+  "placeholders": [],
+  "context": [
+   "Label(includesApp ? L(\"Gỡ cài đặt\") : L(\"Xoá file đã chọn\"), systemImage: \"trash\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Gỡ dependency không còn formula nào cần: %@%@",
+  "placeholders": [
+   "@",
+   "@"
+  ],
+  "context": [
+   "note: L(\"Gỡ dependency không còn formula nào cần: \\(formulae.prefix(12).joined(separator: \", \"))\\(formulae.count > 12 ? \"…\" : \"\")\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Gỡ ứng dụng",
+  "placeholders": [],
+  "context": [
+   "Label(\"Gỡ ứng dụng\", systemImage: \"xmark.app\").tag(SidebarItem.uninstaller)"
+  ],
+  "count": false
+ },
+ {
+  "key": "HTTP storages (cookie/cache của app)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/HTTPStorages\", L(\"HTTP storages (cookie/cache của app)\"), group: g, safety: .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hiện trong Finder",
+  "placeholders": [],
+  "context": [
+   "Button(\"Hiện trong Finder\") { Finder.reveal(entry.url) }",
+   "Button(\"Hiện trong Finder\") { Finder.reveal(url) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hiện/ẩn panel trợ lý",
+  "placeholders": [],
+  "context": [
+   ".help(L(\"Hiện/ẩn panel trợ lý\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Huỷ",
+  "placeholders": [],
+  "context": [
+   "Button(\"Huỷ\", action: cancelTransfer).buttonStyle(.plain).font(.caption)",
+   "Button(\"Huỷ\", action: cancelTransfer)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hành động",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Hành động\", selection: $rule.action) {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hạng mục dọn dẹp",
+  "placeholders": [],
+  "context": [
+   "Section(\"Hạng mục dọn dẹp\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hằng ngày",
+  "placeholders": [],
+  "context": [
+   "Text(\"Hằng ngày\").tag(0)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hằng ngày lúc %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "? L(\"Hằng ngày lúc \\(String(format: \"%02d:%02d\", s.hour, s.minute))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hằng tuần lúc %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   ": L(\"Hằng tuần lúc \\(String(format: \"%02d:%02d\", s.hour, s.minute))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hệ thống",
+  "placeholders": [],
+  "context": [
+   "let title = L(\"Hệ thống\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hệ thống (cần admin)",
+  "placeholders": [],
+  "context": [
+   "group: hit.system ? L(\"Hệ thống (cần admin)\") : hit.url.deletingLastPathComponent().path.abbreviatingHome,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Hỏi trước khi dọn",
+  "placeholders": [],
+  "context": [
+   "case .askApproval: L(\"Hỏi trước khi dọn\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "IDE sẽ index lại",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".dartServer\", \"Dart analysis server cache\", group: \"Dart\", note: L(\"IDE sẽ index lại\")),",
+   "specs += ScanKit.children(of: .homePath(\"Library/Caches/JetBrains\"), group: jb, note: L(\"IDE sẽ index lại\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Image không dùng",
+  "placeholders": [],
+  "context": [
+   "(L(\"Image không dùng\"), [\"image\", \"prune\", \"-a\", \"-f\"], .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Image/container/volume không dùng, build cache (Docker, OrbStack, Colima, Podman), Minikube",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"Image/container/volume không dùng, build cache (Docker, OrbStack, Colima, Podman), Minikube\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "JDK do Gradle tự tải",
+  "placeholders": [],
+  "context": [
+   "PathSpec(gradle.appendingPathComponent(\"jdks\"), L(\"JDK do Gradle tự tải\"), group: g, safety: .caution),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Khi còn dưới %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "case .freeSpaceBelow(let b): L(\"Khi còn dưới \\(ByteFormat.string(b))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Khi nào chạy",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Khi nào chạy\", selection: $isSchedule) {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Khi ổ cứng sắp đầy",
+  "placeholders": [],
+  "context": [
+   "Text(\"Khi ổ cứng sắp đầy\").tag(false)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Khác",
+  "placeholders": [],
+  "context": [
+   "let other = L(\"Khác\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không chạy được lsof — mọi mục được đánh dấu Cân nhắc.",
+  "placeholders": [],
+  "context": [
+   "notes.append(L(\"Không chạy được lsof — mọi mục được đánh dấu Cân nhắc.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không còn trong danh sách simctl",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Không còn trong danh sách simctl\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không có bundle ID",
+  "placeholders": [],
+  "context": [
+   "Text(app.bundleID ?? L(\"Không có bundle ID\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không có gì để dọn 🎉",
+  "placeholders": [],
+  "context": [
+   "Text(ms.result.items.isEmpty ? L(\"Không có gì để dọn 🎉\") : L(\"Không có mục nào khớp bộ lọc\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không có mục nào khớp bộ lọc",
+  "placeholders": [],
+  "context": [
+   "Text(ms.result.items.isEmpty ? L(\"Không có gì để dọn 🎉\") : L(\"Không có mục nào khớp bộ lọc\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không có mục nào khớp.",
+  "placeholders": [],
+  "context": [
+   "guard !items.isEmpty else { return L(\"Không có mục nào khớp.\") }",
+   "guard !items.isEmpty else { return L(\"Không có mục nào khớp.\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không kích hoạt được (%@).",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "default: serverMessage ?? L(\"Không kích hoạt được (\\(code)).\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không liên lạc được máy chủ. Kiểm tra mạng rồi thử lại.",
+  "placeholders": [],
+  "context": [
+   "case \"network\": L(\"Không liên lạc được máy chủ. Kiểm tra mạng rồi thử lại.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không thực hiện được",
+  "placeholders": [],
+  "context": [
+   ".alert(\"Không thực hiện được\", isPresented: Binding(get: { model.error != nil },"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không tìm thấy Android SDK.",
+  "placeholders": [],
+  "context": [
+   "if sdk == nil { notes.append(L(\"Không tìm thấy Android SDK.\")) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không tìm thấy gì để dọn.",
+  "placeholders": [],
+  "context": [
+   "return lines.isEmpty ? L(\"Không tìm thấy gì để dọn.\") : lines.joined(separator: \", \")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không tìm thấy lệnh '%@' trong PATH",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "case .notFound(let cmd): L(\"Không tìm thấy lệnh '\\(cmd)' trong PATH\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không tìm thấy mục nào dọn được tự động.",
+  "placeholders": [],
+  "context": [
+   ": L(\"Không tìm thấy mục nào dọn được tự động.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không xoá được",
+  "placeholders": [],
+  "context": [
+   ".alert(\"Không xoá được\", isPresented: Binding(get: { errorText != nil }, set: { if !$0 { errorText = nil } })) {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không đọc được danh sách simulator runtime.",
+  "placeholders": [],
+  "context": [
+   "else { return ScanResult(notes: [L(\"Không đọc được danh sách simulator runtime.\")]) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không đọc được danh sách simulator.",
+  "placeholders": [],
+  "context": [
+   "else { return ScanResult(notes: [L(\"Không đọc được danh sách simulator.\")]) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Không đọc được dung lượng ổ đĩa.",
+  "placeholders": [],
+  "context": [
+   "guard let volume = state.volume else { return L(\"Không đọc được dung lượng ổ đĩa.\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Khởi động cùng máy",
+  "placeholders": [],
+  "context": [
+   "Toggle(\"Khởi động cùng máy\", isOn: Binding(get: { model.agent.isOn },"
+  ],
+  "count": false
+ },
+ {
+  "key": "Khởi động lại",
+  "placeholders": [],
+  "context": [
+   "Button(\"Khởi động lại\") { AppLanguage.relaunch() }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Khởi động lại OmitX để áp dụng ngôn ngữ mới.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Khởi động lại OmitX để áp dụng ngôn ngữ mới.\").font(.callout)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Kiểm lại trước",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Kiểm lại trước\", value: info.expires.formatted(date: .abbreviated, time: .omitted))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Kiểm tra lại",
+  "placeholders": [],
+  "context": [
+   "Button(\"Kiểm tra lại\") { model.refreshAvailability() }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Kiểm tra mỗi %lld phút",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Stepper(\"Kiểm tra mỗi \\(model.settings.pollMinutes) phút\","
+  ],
+  "count": true
+ },
+ {
+  "key": "Kiểm tra ndkVersion trong build.gradle trước khi xoá",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Kiểm tra ndkVersion trong build.gradle trước khi xoá\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Kiểm tra ngay",
+  "placeholders": [],
+  "context": [
+   "m.addItem(withTitle: L(\"Kiểm tra ngay\"), action: #selector(checkNow), keyEquivalent: \"\").target = self"
+  ],
+  "count": false
+ },
+ {
+  "key": "Kích hoạt",
+  "placeholders": [],
+  "context": [
+   "Button(\"Kích hoạt\", action: activate).disabled(busy || code.isEmpty)",
+   "Button(\"Kích hoạt\", action: activate).disabled(busy || code.isEmpty)"
+  ],
+  "count": false
+ },
+ {
+  "key": "LM Studio models (cũ)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".cache/lm-studio/models\", L(\"LM Studio models (cũ)\"), group: ml, safety: .caution, selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Logs & trạng thái",
+  "placeholders": [],
+  "context": [
+   "let g = L(\"Logs & trạng thái\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Làm gì khi khớp",
+  "placeholders": [],
+  "context": [
+   "Text(\"Làm gì khi khớp\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lúc %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Stepper(\"Lúc \\(String(format: \"%02d:%02d\", schedule.hour, schedule.minute))\","
+  ],
+  "count": false
+ },
+ {
+  "key": "Lưu",
+  "placeholders": [],
+  "context": [
+   "Button(\"Lưu\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lần chạy gần đây",
+  "placeholders": [],
+  "context": [
+   "Section(\"Lần chạy gần đây\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lần dùng cuối",
+  "placeholders": [],
+  "context": [
+   "case .lastUsed: \"Lần dùng cuối\""
+  ],
+  "count": false
+ },
+ {
+  "key": "Lần dọn gần nhất",
+  "placeholders": [],
+  "context": [
+   "stat(\"Lần dọn gần nhất\", \"\\(ByteFormat.string(last.freed)) · \\(last.date.relative)\", .blue)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lặp lại",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Lặp lại\", selection: Binding(get: { schedule.weekday ?? 0 },"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lịch sử chỉnh sửa file cục bộ (Timeline)",
+  "placeholders": [],
+  "context": [
+   "safety: .caution, note: L(\"Lịch sử chỉnh sửa file cục bộ (Timeline)\"), selected: false))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lịch sử hội thoại — xoá thì không resume được phiên cũ",
+  "placeholders": [],
+  "context": [
+   "let historyNote = L(\"Lịch sử hội thoại — xoá thì không resume được phiên cũ\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lịch sử trò chuyện",
+  "placeholders": [],
+  "context": [
+   "Text(\"Lịch sử trò chuyện\").font(.headline)",
+   ".help(L(\"Lịch sử trò chuyện\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lọc theo tên / đường dẫn",
+  "placeholders": [],
+  "context": [
+   ".searchable(text: $search, placement: .toolbar, prompt: \"Lọc theo tên / đường dẫn\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Lỗi không rõ",
+  "placeholders": [],
+  "context": [
+   "let msg = err?[NSAppleScript.errorMessage] as? String ?? L(\"Lỗi không rõ\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Model AI/ML",
+  "placeholders": [],
+  "context": [
+   "let ml = L(\"Model AI/ML\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Model sẽ được tải lại khi dùng",
+  "placeholders": [],
+  "context": [
+   "specs += ScanKit.children(of: hfHub, group: ml, safety: .caution, note: L(\"Model sẽ được tải lại khi dùng\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mua Pro — %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Link(\"Mua Pro — \\(Self.price)\", destination: Self.pricing)",
+   "Link(\"Mua Pro — \\(Self.price)\", destination: Self.pricing)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Máy này không chạy được Apple Intelligence — trợ lý cần Mac chip Apple.",
+  "placeholders": [],
+  "context": [
+   "case .deviceNotEligible: L(\"Máy này không chạy được Apple Intelligence — trợ lý cần Mac chip Apple.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Máy này không còn gắn với mã.",
+  "placeholders": [],
+  "context": [
+   "case \"not_bound\": L(\"Máy này không còn gắn với mã.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Máy này là máy mới",
+  "placeholders": [],
+  "context": [
+   "Button(\"Máy này là máy mới\", action: requestTransfer).disabled(busy)",
+   "Button(\"Máy này là máy mới\", action: requestTransfer).disabled(busy)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Máy này đã dùng hết bản dùng thử.",
+  "placeholders": [],
+  "context": [
+   "case \"trial_used\": L(\"Máy này đã dùng hết bản dùng thử.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Máy ảo & công cụ khác",
+  "placeholders": [],
+  "context": [
+   "let vm = L(\"Máy ảo & công cụ khác\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã kích hoạt",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Mã kích hoạt\") {",
+   "TextField(\"Mã kích hoạt\", text: $code, prompt: Text(verbatim: mask))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã kích hoạt không tồn tại.",
+  "placeholders": [],
+  "context": [
+   "case \"unknown_code\": L(\"Mã kích hoạt không tồn tại.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã máy",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Mã máy\", value: info.machineHint)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã nguồn Android để xem trong IDE",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Mã nguồn Android để xem trong IDE\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã này đang dùng trên máy khác.",
+  "placeholders": [],
+  "context": [
+   "case \"bound_elsewhere\": L(\"Mã này đang dùng trên máy khác.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã này đã bị thu hồi.",
+  "placeholders": [],
+  "context": [
+   "case \"revoked\", \"disabled\": L(\"Mã này đã bị thu hồi.\")",
+   "Text(\"Mã này đã bị thu hồi.\").font(.callout).foregroundStyle(.orange)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã này đã dùng trên quá nhiều máy. Hãy liên hệ hỗ trợ.",
+  "placeholders": [],
+  "context": [
+   "case \"too_many_machines\": L(\"Mã này đã dùng trên quá nhiều máy. Hãy liên hệ hỗ trợ.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã xác nhận",
+  "placeholders": [],
+  "context": [
+   "TextField(\"Mã xác nhận\", text: $otp)",
+   "LabeledContent(\"Mã xác nhận\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã xác nhận không đúng.",
+  "placeholders": [],
+  "context": [
+   "case \"otp_wrong\": L(\"Mã xác nhận không đúng.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mã xác nhận đã hết hạn.",
+  "placeholders": [],
+  "context": [
+   "case \"otp_expired\": L(\"Mã xác nhận đã hết hạn.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Môi trường",
+  "placeholders": [],
+  "context": [
+   "Section(\"Môi trường\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mất app + dữ liệu đã cài trong simulator này (%@)",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "note: dev.available ? L(\"Mất app + dữ liệu đã cài trong simulator này (\\(dev.state))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mất quick-boot snapshot, lần sau cold boot",
+  "placeholders": [],
+  "context": [
+   "group: \"Android Emulator (AVD)\", note: L(\"Mất quick-boot snapshot, lần sau cold boot\"), blocking: [\"qemu-system\"])"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mất toàn bộ image/container trong Colima. Nên dùng 'colima delete'.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Mất toàn bộ image/container trong Colima. Nên dùng 'colima delete'.\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mất trạng thái cửa sổ khi mở lại app",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Mất trạng thái cửa sổ khi mở lại app\"), contentsOnly: true),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mọi hạng mục",
+  "placeholders": [],
+  "context": [
+   "? L(\"Mọi hạng mục\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Một số app sẽ phải đăng nhập lại",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Một số app sẽ phải đăng nhập lại\"), contentsOnly: true, selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Một số mục cần quyền admin — macOS sẽ hỏi mật khẩu.",
+  "placeholders": [],
+  "context": [
+   "Label(\"Một số mục cần quyền admin — macOS sẽ hỏi mật khẩu.\", systemImage: \"lock.shield\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mới dùng gần đây — có thể vẫn cần",
+  "placeholders": [],
+  "context": [
+   "note: stale ? nil : L(\"Mới dùng gần đây — có thể vẫn cần\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mở",
+  "placeholders": [],
+  "context": [
+   "if entry.isDirectory { Button(\"Mở\") { model.open(entry.url) } }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mở Cài đặt hệ thống",
+  "placeholders": [],
+  "context": [
+   "Button(\"Mở Cài đặt hệ thống\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mở Login Items",
+  "placeholders": [],
+  "context": [
+   "Button(\"Mở Login Items\") { Pro.automation?.openLoginItemsSettings() }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mở OmitX",
+  "placeholders": [],
+  "context": [
+   "m.addItem(withTitle: L(\"Mở OmitX\"), action: #selector(openApp), keyEquivalent: \"\").target = self"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mở cài đặt Full Disk Access",
+  "placeholders": [],
+  "context": [
+   "Button(\"Mở cài đặt Full Disk Access\") { Finder.openFullDiskAccessSettings() }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Mức độ",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Mức độ\", selection: $safetyFilter) {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ngay lúc này không có mục nào khớp.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Ngay lúc này không có mục nào khớp.\").foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nguy hiểm",
+  "placeholders": [],
+  "context": [
+   "case .danger: L(\"Nguy hiểm\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ngày sửa",
+  "placeholders": [],
+  "context": [
+   "TableColumn(\"Ngày sửa\", value: \\.sortDate) { e in"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ngôn ngữ",
+  "placeholders": [],
+  "context": [
+   "Section(\"Ngôn ngữ\") {",
+   "Label(\"Ngôn ngữ\", systemImage: \"globe\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ngôn ngữ giao diện",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Ngôn ngữ giao diện\", selection: $selection) {",
+   ".help(\"Ngôn ngữ giao diện\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Người dùng huỷ",
+  "placeholders": [],
+  "context": [
+   "case .cancelled: L(\"Người dùng huỷ\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ngưỡng dung lượng",
+  "placeholders": [],
+  "context": [
+   "Text(\"Ngưỡng dung lượng\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ngưỡng dung lượng trống",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Ngưỡng dung lượng trống\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nhả máy này",
+  "placeholders": [],
+  "context": [
+   "Button(\"Nhả máy này\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nhả máy này trước khi bán hoặc cài lại máy, để dùng mã ở máy khác mà không cần mã xác nhận.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Nhả máy này trước khi bán hoặc cài lại máy, để dùng mã ở máy khác mà không cần mã xác nhận.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nhật ký",
+  "placeholders": [],
+  "context": [
+   "Label(\"Nhật ký\", systemImage: \"clock.arrow.circlepath\").tag(SidebarItem.log)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nên dùng 'ollama rm <model>' để xoá từng model",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Nên dùng 'ollama rm <model>' để xoá từng model\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nên tắt các ứng dụng này trước để tránh lỗi hoặc file bị tạo lại ngay.",
+  "placeholders": [],
+  "context": [
+   "L(\"Nên tắt các ứng dụng này trước để tránh lỗi hoặc file bị tạo lại ngay.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nên tắt editor trước khi xoá cache của nó.",
+  "placeholders": [],
+  "context": [
+   "return ScanResult(items: items, notes: [L(\"Nên tắt editor trước khi xoá cache của nó.\")])"
+  ],
+  "count": false
+ },
+ {
+  "key": "Nói tôi cần dọn gì, tôi chọn sẵn rồi bạn duyệt.",
+  "placeholders": [],
+  "context": [
+   ": \"Nói tôi cần dọn gì, tôi chọn sẵn rồi bạn duyệt.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "OK",
+  "placeholders": [],
+  "context": [
+   "Button(\"OK\") { model.error = nil }",
+   "Button(\"OK\") {}"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ollama models (toàn bộ)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".ollama/models\", L(\"Ollama models (toàn bộ)\"), group: ml, safety: .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "OmitX",
+  "placeholders": [],
+  "context": [
+   "WindowGroup(\"OmitX\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "OmitX sẽ tìm app cùng toàn bộ cache, cấu hình, container, log… mà nó để lại trong ~/Library.",
+  "placeholders": [],
+  "context": [
+   "description: Text(\"OmitX sẽ tìm app cùng toàn bộ cache, cấu hình, container, log… mà nó để lại trong ~/Library.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "OmitX thấy khoảng %@ có thể dọn an toàn.",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "? L(\"OmitX thấy khoảng \\(ByteFormat.string(reclaimable)) có thể dọn an toàn.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "PATH dùng để chạy lệnh",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"PATH dùng để chạy lệnh\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Package cache",
+  "placeholders": [],
+  "context": [
+   "let c = L(\"Package cache\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Package manager cache",
+  "placeholders": [],
+  "context": [
+   "let pm = L(\"Package manager cache\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Package sẽ được tải lại",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/Caches/org.swift.swiftpm\", \"SwiftPM cache\", group: depGroup, note: L(\"Package sẽ được tải lại\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Phiên Claude Code: %@ (%lld)",
+  "placeholders": [
+   "@",
+   "d"
+  ],
+  "context": [
+   "title: L(\"Phiên Claude Code: \\(Self.projectName(project.lastPathComponent)) (\\(sessions))\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Phiên bản Node.js",
+  "placeholders": [],
+  "context": [
+   "let nodeGroup = L(\"Phiên bản Node.js\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Phiên bản Python",
+  "placeholders": [],
+  "context": [
+   "specs += ScanKit.children(of: dir, group: L(\"Phiên bản Python\"), safety: .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Phiên bản cũ đã được thay thế",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Phiên bản cũ đã được thay thế\")))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Phân tích dung lượng",
+  "placeholders": [],
+  "context": [
+   "Label(\"Phân tích dung lượng\", systemImage: \"chart.bar.xaxis\").tag(SidebarItem.analyzer)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Phải tạo lại venv + cài lại package",
+  "placeholders": [],
+  "context": [
+   "Rule(name: \".venv\", markers: [], kind: \"Python venv\", safety: .caution, note: L(\"Phải tạo lại venv + cài lại package\"),",
+   "Rule(name: \"venv\", markers: [], kind: \"Python venv\", safety: .caution, note: L(\"Phải tạo lại venv + cài lại package\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Project",
+  "placeholders": [],
+  "context": [
+   "let title = L(\"Project\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Project cần bản này sẽ tự tải lại",
+  "placeholders": [],
+  "context": [
+   "note: newest ? L(\"Bản mới nhất — giữ lại\") : L(\"Project cần bản này sẽ tự tải lại\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Project cần phiên bản nào sẽ tải lại",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Project cần phiên bản nào sẽ tải lại\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Project poetry sẽ phải poetry install lại",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Project poetry sẽ phải poetry install lại\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Project đang pin bản này sẽ phải fvm install lại",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Project đang pin bản này sẽ phải fvm install lại\"), selected: false,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Provider/plugin sẽ được tải lại",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".cache/opencode\", \"opencode · cache\", group: opencode, note: L(\"Provider/plugin sẽ được tải lại\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quay lại",
+  "placeholders": [],
+  "context": [
+   ".help(\"Quay lại\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quy tắc",
+  "placeholders": [],
+  "context": [
+   "Section(\"Quy tắc\") {",
+   "Section(\"Quy tắc\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quy tắc cần có tên.",
+  "placeholders": [],
+  "context": [
+   "L(\"Quy tắc cần có tên.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quy tắc mới",
+  "placeholders": [],
+  "context": [
+   "editing = CleanRule(name: L(\"Quy tắc mới\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quy tắc tự động chỉ được đụng tới mục mức An toàn. Mục Cân nhắc và Nguy hiểm phải tự xem rồi dọn tay.",
+  "placeholders": [],
+  "context": [
+   "L(\"Quy tắc tự động chỉ được đụng tới mục mức An toàn. Mục Cân nhắc và Nguy hiểm phải tự xem rồi dọn tay.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quyền truy cập",
+  "placeholders": [],
+  "context": [
+   "Section(\"Quyền truy cập\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quét %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Text(ms.scannedAt.map { L(\"Quét \\($0.relative)\") } ?? L(\"Chưa quét\")).font(.caption).foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quét cache, build artifact, SDK, simulator, Docker… rồi chọn những gì muốn xoá.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Quét cache, build artifact, SDK, simulator, Docker… rồi chọn những gì muốn xoá.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quét lại",
+  "placeholders": [],
+  "context": [
+   "Button(\"Quét lại\") { Task { await state.scan(module.id) } }",
+   ".help(\"Quét lại\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quét ngay",
+  "placeholders": [],
+  "context": [
+   "Button(\"Quét ngay\") { Task { await state.scan(moduleID) } }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quét project",
+  "placeholders": [],
+  "context": [
+   "Section(\"Quét project\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quét trong:",
+  "placeholders": [],
+  "context": [
+   "Text(\"Quét trong:\").foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Quét tất cả",
+  "placeholders": [],
+  "context": [
+   "Button(\"Quét tất cả\") { Task { await state.scanAll() } }",
+   "Label(state.isScanningAny ? L(\"Đang quét…\") : L(\"Quét tất cả\"), systemImage: \"sparkle.magnifyingglass\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Runtime đã bị gỡ — simulator này không dùng được nữa",
+  "placeholders": [],
+  "context": [
+   ": L(\"Runtime đã bị gỡ — simulator này không dùng được nữa\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Rust, Go, Java & khác",
+  "placeholders": [],
+  "context": [
+   "let title = L(\"Rust, Go, Java & khác\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "SDK download tạm",
+  "placeholders": [],
+  "context": [
+   "specs.append(PathSpec(sdk.appendingPathComponent(\".downloadIntermediates\"), L(\"SDK download tạm\"), group: \"SDK Cache\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Sai quá nhiều lần. Hãy yêu cầu mã mới.",
+  "placeholders": [],
+  "context": [
+   "case \"otp_locked\": L(\"Sai quá nhiều lần. Hãy yêu cầu mã mới.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Settings/plugin của phiên bản Android Studio cũ đã được migrate",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Settings/plugin của phiên bản Android Studio cũ đã được migrate\"), selected: true))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Settings/plugin của phiên bản IDE cũ",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Settings/plugin của phiên bản IDE cũ\"), selected: true))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Simulator không khả dụng",
+  "placeholders": [],
+  "context": [
+   "PathSpec($0, L(\"Device mồ côi \\($0.lastPathComponent.prefix(8))…\"), group: L(\"Simulator không khả dụng\"),",
+   "group: dev.available ? L(\"Thiết bị Simulator\") : L(\"Simulator không khả dụng\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Simulator runtime (iOS 17/18/26...), thiết bị simulator, dyld cache",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"Simulator runtime (iOS 17/18/26...), thiết bị simulator, dyld cache\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Snapshot dùng để undo thay đổi của agent",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Snapshot dùng để undo thay đổi của agent\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Sắp xếp theo",
+  "placeholders": [],
+  "context": [
+   "Picker(\"Sắp xếp theo\", selection: $model.sort) {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Sẽ hỏi mật khẩu admin. Dung lượng đo được có thể thiếu do không đủ quyền đọc.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Sẽ hỏi mật khẩu admin. Dung lượng đo được có thể thiếu do không đủ quyền đọc.\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Sẽ phải tải/build lại, hoặc mất cấu hình phụ.",
+  "placeholders": [],
+  "context": [
+   "warningBox(.orange, L(\"\\(caution.count) mục cần cân nhắc\"), L(\"Sẽ phải tải/build lại, hoặc mất cấu hình phụ.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Sửa",
+  "placeholders": [],
+  "context": [
+   "Button(\"Sửa\", action: edit)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Theo hệ thống",
+  "placeholders": [],
+  "context": [
+   "Text(\"Theo hệ thống\").tag(\"\")",
+   "Button(\"Theo hệ thống\") { apply(nil) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Theo lịch",
+  "placeholders": [],
+  "context": [
+   "Text(\"Theo lịch\").tag(true)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thiết bị Simulator",
+  "placeholders": [],
+  "context": [
+   "group: dev.available ? L(\"Thiết bị Simulator\") : L(\"Simulator không khả dụng\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thoát tiến trình nền",
+  "placeholders": [],
+  "context": [
+   "m.addItem(withTitle: L(\"Thoát tiến trình nền\"), action: #selector(quit), keyEquivalent: \"q\").target = self"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thêm quy tắc",
+  "placeholders": [],
+  "context": [
+   "} label: { Label(\"Thêm quy tắc\", systemImage: \"plus\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thêm thư mục",
+  "placeholders": [],
+  "context": [
+   "} label: { Label(\"Thêm thư mục\", systemImage: \"plus\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thêm thư mục…",
+  "placeholders": [],
+  "context": [
+   "Button(\"Thêm thư mục…\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thùng rác",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".Trash\", L(\"Thùng rác\"), group: g, safety: .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thư mục .venv / __pycache__ trong từng project nằm ở mục \"Project\".",
+  "placeholders": [],
+  "context": [
+   "return ScanResult(items: items, notes: [L(\"Thư mục .venv / __pycache__ trong từng project nằm ở mục \\\"Project\\\".\")])"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thư mục build/ và .dart_tool/ trong từng project nằm ở mục \"Project\".",
+  "placeholders": [],
+  "context": [
+   "notes: [L(\"Thư mục build/ và .dart_tool/ trong từng project nằm ở mục \\\"Project\\\".\")])"
+  ],
+  "count": false
+ },
+ {
+  "key": "Thư mục cha",
+  "placeholders": [],
+  "context": [
+   ".help(\"Thư mục cha\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tin mới",
+  "placeholders": [],
+  "context": [
+   "Label(\"Tin mới\", systemImage: \"arrow.down\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tiến trình nền",
+  "placeholders": [],
+  "context": [
+   "Text(\"Tiến trình nền\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tiến trình nền chạy ngay cả khi cửa sổ OmitX đã đóng — đó là điều kiện để cảnh báo trước khi ổ cứng đầy.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Tiến trình nền chạy ngay cả khi cửa sổ OmitX đã đóng — đó là điều kiện để cảnh báo trước khi ổ cứng đầy.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Toolbox downloads",
+  "placeholders": [],
+  "context": [
+   "specs.append(PathSpec(home: \"Library/Application Support/JetBrains/Toolbox/download\", L(\"Toolbox downloads\"), group: jb))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Trình duyệt test",
+  "placeholders": [],
+  "context": [
+   "let browsers = L(\"Trình duyệt test\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Trạng thái từng workspace (tab mở, lịch sử chat AI của Cursor/Copilot...). Có thể rất lớn.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Trạng thái từng workspace (tab mở, lịch sử chat AI của Cursor/Copilot...). Có thể rất lớn.\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Trợ lý",
+  "placeholders": [],
+  "context": [
+   "Label(\"Trợ lý\", systemImage: \"sparkles\").font(.headline)",
+   "Label(\"Trợ lý\", systemImage: \"sparkles\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Trợ lý cần macOS 26 trở lên.",
+  "placeholders": [],
+  "context": [
+   "case .unsupportedOS: L(\"Trợ lý cần macOS 26 trở lên.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Trợ lý không nhớ hội thoại này; gõ tiếp sẽ bắt đầu ngữ cảnh mới.",
+  "placeholders": [],
+  "context": [
+   "Label(\"Trợ lý không nhớ hội thoại này; gõ tiếp sẽ bắt đầu ngữ cảnh mới.\","
+  ],
+  "count": false
+ },
+ {
+  "key": "Trợ lý là tính năng Pro",
+  "placeholders": [],
+  "context": [
+   "case .chat: L(\"Trợ lý là tính năng Pro\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tên",
+  "placeholders": [],
+  "context": [
+   "TableColumn(\"Tên\", value: \\.name) { e in",
+   "TextField(\"Tên\", text: $rule.name)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tìm project không đụng tới quá 90 ngày",
+  "placeholders": [],
+  "context": [
+   "L(\"Tìm project không đụng tới quá 90 ngày\")]"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tìm ứng dụng",
+  "placeholders": [],
+  "context": [
+   ".searchable(text: $search, placement: .toolbar, prompt: \"Tìm ứng dụng\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tình trạng",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Tình trạng\", value: summary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tôi hiểu các mục nguy hiểm sẽ bị xoá và không khôi phục được",
+  "placeholders": [],
+  "context": [
+   "Toggle(\"Tôi hiểu các mục nguy hiểm sẽ bị xoá và không khôi phục được\", isOn: $acknowledged)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tương đương go clean -cache",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/Caches/go-build\", \"Go build cache\", group: go, note: L(\"Tương đương go clean -cache\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tương đương go clean -modcache. Module sẽ tải lại khi build.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Tương đương go clean -modcache. Module sẽ tải lại khi build.\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tương đương npm cache clean --force",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".npm/_cacache\", \"npm cache\", group: pm, note: L(\"Tương đương npm cache clean --force\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tương đương uv cache clean",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".cache/uv\", \"uv cache\", group: c, note: L(\"Tương đương uv cache clean\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tạo lại khi boot simulator",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Tạo lại khi boot simulator\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tải lại khi build KMP",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".konan\", \"Kotlin/Native (.konan)\", group: a, safety: .caution, note: L(\"Tải lại khi build KMP\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tất cả",
+  "placeholders": [],
+  "context": [
+   "Text(\"Tất cả\").tag(Safety?.none)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tối đa",
+  "placeholders": [],
+  "context": [
+   "LabeledContent(\"Tối đa\") {"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tổng quan",
+  "placeholders": [],
+  "context": [
+   "Label(\"Tổng quan\", systemImage: \"gauge.with.dots.needle.67percent\").tag(SidebarItem.dashboard)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tự chạy",
+  "placeholders": [],
+  "context": [
+   "case .auto: L(\"Tự chạy\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tự tạo lại khi cắm thiết bị chạy phiên bản này",
+  "placeholders": [],
+  "context": [
+   "note: isNewest ? L(\"Bản mới nhất — Xcode sẽ tạo lại khi cắm thiết bị\") : L(\"Tự tạo lại khi cắm thiết bị chạy phiên bản này\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tự động",
+  "placeholders": [],
+  "context": [
+   ".tabItem { Label(\"Tự động\", systemImage: \"clock.arrow.circlepath\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Tự động hoá là tính năng Pro",
+  "placeholders": [],
+  "context": [
+   "case .automation: L(\"Tự động hoá là tính năng Pro\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "User logs",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/Logs\", L(\"User logs\"), group: g, contentsOnly: true),"
+  ],
+  "count": false
+ },
+ {
+  "key": "VS Code, Cursor, Windsurf, JetBrains, Zed, Sublime; extension cũ; cache app Electron (Slack, Postman...)",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"VS Code, Cursor, Windsurf, JetBrains, Zed, Sublime; extension cũ; cache app Electron (Slack, Postman...)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Volume không dùng",
+  "placeholders": [],
+  "context": [
+   "(L(\"Volume không dùng\"), [\"volume\", \"prune\", \"-a\", \"-f\"], .danger,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Vị trí",
+  "placeholders": [],
+  "context": [
+   "Label(\"Vị trí\", systemImage: \"folder\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xcode đang mở — nên tắt Xcode trước khi xoá DerivedData / cache.",
+  "placeholders": [],
+  "context": [
+   "notes.append(L(\"Xcode đang mở — nên tắt Xcode trước khi xoá DerivedData / cache.\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xem quy tắc này dọn được gì",
+  "placeholders": [],
+  "context": [
+   "Label(\"Xem quy tắc này dọn được gì\", systemImage: \"play.circle\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xem thư mục nào đang chiếm nhiều dung lượng nhất, bấm đúp để đi sâu vào.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Xem thư mục nào đang chiếm nhiều dung lượng nhất, bấm đúp để đi sâu vào.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xong",
+  "placeholders": [],
+  "context": [
+   "Button(\"Xong\") { dismiss() }.keyboardShortcut(.defaultAction)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá",
+  "placeholders": [],
+  "context": [
+   "Button(\"Xoá\") { state.projectRoots.removeAll { $0 == url } }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "case .delete(let u): L(\"Xoá \\(u.path.abbreviatingHome)\")",
+   "case .deletePaths(let us): L(\"Xoá \\(us.map { $0.path.abbreviatingHome }.joined(separator: \", \"))\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá bằng simctl. Tải lại trong Xcode → Settings → Components.",
+  "placeholders": [],
+  "context": [
+   "let note = L(\"Xoá bằng simctl. Tải lại trong Xcode → Settings → Components.\") + \" \" + lastUsedText"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá cluster minikube — nên dùng 'minikube delete'",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Xoá cluster minikube — nên dùng 'minikube delete'\"), selected: false),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá container đã stop (dữ liệu trong container, không phải volume, sẽ mất)",
+  "placeholders": [],
+  "context": [
+   "L(\"Xoá container đã stop (dữ liệu trong container, không phải volume, sẽ mất)\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá cả môi trường conda + package đã cài",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Xoá cả môi trường conda + package đã cài\"), selected: false,"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá file đã chọn",
+  "placeholders": [],
+  "context": [
+   "Label(includesApp ? L(\"Gỡ cài đặt\") : L(\"Xoá file đã chọn\"), systemImage: \"trash\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá máy ảo + toàn bộ dữ liệu trong đó",
+  "placeholders": [],
+  "context": [
+   "note: L(\"Xoá máy ảo + toàn bộ dữ liệu trong đó\"), action: .deletePaths(paths),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá mọi image không gắn với container nào — lần sau sẽ pull lại",
+  "placeholders": [],
+  "context": [
+   "L(\"Xoá mọi image không gắn với container nào — lần sau sẽ pull lại\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá nội dung %@/*",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "case .deleteContents(let u): L(\"Xoá nội dung \\(u.path.abbreviatingHome)/*\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá phiên bản cũ của formula/cask và toàn bộ file tải về trong cache",
+  "placeholders": [],
+  "context": [
+   "size: size, note: L(\"Xoá phiên bản cũ của formula/cask và toàn bộ file tải về trong cache\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá tarball + package không còn env nào dùng. Dung lượng thực tế có thể nhỏ hơn (package đang link vào env được giữ).",
+  "placeholders": [],
+  "context": [
+   "size: size, note: L(\"Xoá tarball + package không còn env nào dùng. Dung lượng thực tế có thể nhỏ hơn (package đang link vào env được giữ).\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá toàn bộ lịch sử",
+  "placeholders": [],
+  "context": [
+   "Button(\"Xoá toàn bộ lịch sử\", role: .destructive) { model.clearHistory() }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xoá vĩnh viễn (giải phóng ngay)",
+  "placeholders": [],
+  "context": [
+   "case .permanent: L(\"Xoá vĩnh viễn (giải phóng ngay)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Xác nhận đổi máy",
+  "placeholders": [],
+  "context": [
+   "Button(\"Xác nhận đổi máy\", action: confirmTransfer)",
+   "Button(\"Xác nhận đổi máy\", action: confirmTransfer).disabled(busy || otp.isEmpty)"
+  ],
+  "count": false
+ },
+ {
+  "key": "brew cleanup (bản cũ + download cache), brew autoremove (dependency mồ côi)",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"brew cleanup (bản cũ + download cache), brew autoremove (dependency mồ côi)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "ccache (cũ)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".ccache\", L(\"ccache (cũ)\"), group: other),"
+  ],
+  "count": false
+ },
+ {
+  "key": "compileSdk cần bản này",
+  "placeholders": [],
+  "context": [
+   "safety: .caution, note: L(\"compileSdk cần bản này\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "flutter pub get sẽ tải lại. Giữ lại package global (bin/, global_packages/).",
+  "placeholders": [],
+  "context": [
+   "note: L(\"flutter pub get sẽ tải lại. Giữ lại package global (bin/, global_packages/).\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "khớp bundle ID",
+  "placeholders": [],
+  "context": [
+   "let reason = [L(\"khớp bundle ID\"), L(\"khớp tên app\"), L(\"tên bắt đầu bằng tên app — kiểm tra lại\")][hit.match]"
+  ],
+  "count": false
+ },
+ {
+  "key": "khớp tên app",
+  "placeholders": [],
+  "context": [
+   "let reason = [L(\"khớp bundle ID\"), L(\"khớp tên app\"), L(\"tên bắt đầu bằng tên app — kiểm tra lại\")][hit.match]"
+  ],
+  "count": false
+ },
+ {
+  "key": "macOS chỉ báo khi ổ đã gần cạn. Đặt ngưỡng cao hơn để còn kịp xử lý.",
+  "placeholders": [],
+  "context": [
+   "Text(\"macOS chỉ báo khi ổ đã gần cạn. Đặt ngưỡng cao hơn để còn kịp xử lý.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "macOS đang tải model về, thử lại sau ít phút.",
+  "placeholders": [],
+  "context": [
+   "case .modelNotReady: L(\"macOS đang tải model về, thử lại sau ít phút.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "mvn sẽ tải lại dependency",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".m2/repository\", \"Maven local repository\", group: jvm, note: L(\"mvn sẽ tải lại dependency\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "mọi hạng mục",
+  "placeholders": [],
+  "context": [
+   "let scope = rule.query.modules.isEmpty ? L(\"mọi hạng mục\") : rule.query.modules.joined(separator: \", \")"
+  ],
+  "count": false
+ },
+ {
+  "key": "node-gyp (cũ)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \".node-gyp\", L(\"node-gyp (cũ)\"), group: build),"
+  ],
+  "count": false
+ },
+ {
+  "key": "node_modules của project pnpm hard-link vào đây. Xoá xong cần pnpm install lại. Ưu tiên 'pnpm store prune'.",
+  "placeholders": [],
+  "context": [
+   "note: L(\"node_modules của project pnpm hard-link vào đây. Xoá xong cần pnpm install lại. Ưu tiên 'pnpm store prune'.\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "node_modules, build/, .dart_tool, .gradle, Pods, target/, .build, .next, .venv... trong các project",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"node_modules, build/, .dart_tool, .gradle, Pods, target/, .build, .next, .venv... trong các project\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "npm, yarn, pnpm, bun, deno, node-gyp, Playwright/Cypress browsers, các bản Node cũ",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"npm, yarn, pnpm, bun, deno, node-gyp, Playwright/Cypress browsers, các bản Node cũ\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "npm/yarn/pnpm install để cài lại",
+  "placeholders": [],
+  "context": [
+   "Rule(name: \"node_modules\", markers: jsMarkers, kind: \"Node\", note: L(\"npm/yarn/pnpm install để cài lại\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "npx playwright install để tải lại",
+  "placeholders": [],
+  "context": [
+   "note: L(\"npx playwright install để tải lại\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "pnpm store (toàn bộ)",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/pnpm/store\", L(\"pnpm store (toàn bộ)\"), group: pm, safety: .caution,"
+  ],
+  "count": false
+ },
+ {
+  "key": "pod install sẽ tải lại",
+  "placeholders": [],
+  "context": [
+   "PathSpec(home: \"Library/Caches/CocoaPods\", \"CocoaPods cache\", group: depGroup, note: L(\"pod install sẽ tải lại\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "pod install để cài lại",
+  "placeholders": [],
+  "context": [
+   "Rule(name: \"Pods\", markers: [\"Podfile\"], kind: \"CocoaPods\", note: L(\"pod install để cài lại\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "pub cache tạm",
+  "placeholders": [],
+  "context": [
+   "PathSpec(pub.appendingPathComponent(\"_temp\"), L(\"pub cache tạm\"), group: \"Pub cache\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "rustup toolchain install để cài lại",
+  "placeholders": [],
+  "context": [
+   "note: L(\"rustup toolchain install để cài lại\"), selected: false,"
+  ],
+  "count": false
+ },
+ {
+  "key": "terraform init để tải lại provider",
+  "placeholders": [],
+  "context": [
+   "Rule(name: \".terraform\", markers: [\"*.tf\"], kind: \"Terraform\", note: L(\"terraform init để tải lại provider\")),"
+  ],
+  "count": false
+ },
+ {
+  "key": "tên bắt đầu bằng tên app — kiểm tra lại",
+  "placeholders": [],
+  "context": [
+   "let reason = [L(\"khớp bundle ID\"), L(\"khớp tên app\"), L(\"tên bắt đầu bằng tên app — kiểm tra lại\")][hit.match]"
+  ],
+  "count": false
+ },
+ {
+  "key": "virtualenv tạo từ bản này sẽ hỏng",
+  "placeholders": [],
+  "context": [
+   "note: L(\"virtualenv tạo từ bản này sẽ hỏng\"), selected: false,"
+  ],
+  "count": false
+ },
+ {
+  "key": "vừa xong",
+  "placeholders": [],
+  "context": [
+   "if abs(timeIntervalSinceNow) < 60 { return L(\"vừa xong\") }"
+  ],
+  "count": false
+ },
+ {
+  "key": "~/Library/Caches, Logs, Saved Application State, Thùng rác, /Library/Caches (admin), backup iPhone",
+  "placeholders": [],
+  "context": [
+   "let summary = L(\"~/Library/Caches, Logs, Saved Application State, Thùng rác, /Library/Caches (admin), backup iPhone\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "· %lld mục",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Text(\"· \\(preview.items.count) mục\").foregroundStyle(.secondary)"
+  ],
+  "count": true
+ },
+ {
+  "key": "Áp dụng & quét lại",
+  "placeholders": [],
+  "context": [
+   "Button(\"Áp dụng & quét lại\") { Task { await state.scan(ProjectModule.idValue) } }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang chạy: %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "warningBox(.orange, L(\"Đang chạy: \\(blockers.joined(separator: \", \"))\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang dùng thử — còn %lld ngày",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Text(\"Đang dùng thử — còn \\(days) ngày\").font(.callout).foregroundStyle(.secondary)",
+   "case .trial(let days): L(\"Đang dùng thử — còn \\(days) ngày\")"
+  ],
+  "count": true
+ },
+ {
+  "key": "Đang dọn %lld/%lld",
+  "placeholders": [
+   "d",
+   "d"
+  ],
+  "context": [
+   "Text(\"Đang dọn \\(min(p.done + 1, p.total))/\\(p.total)\").font(.headline)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang quét lại…",
+  "placeholders": [],
+  "context": [
+   "HStack { ProgressView().controlSize(.small); Text(\"Đang quét lại…\").foregroundStyle(.secondary) }"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang quét…",
+  "placeholders": [],
+  "context": [
+   "Label(state.isScanningAny ? L(\"Đang quét…\") : L(\"Quét tất cả\"), systemImage: \"sparkle.magnifyingglass\")",
+   "Text(\"Đang quét…\").foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang tìm file liên quan…",
+  "placeholders": [],
+  "context": [
+   "ProgressView(\"Đang tìm file liên quan…\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang tính dung lượng…",
+  "placeholders": [],
+  "context": [
+   "Text(\"Đang tính dung lượng…\").font(.caption).foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang xử lý…",
+  "placeholders": [],
+  "context": [
+   "Text(\"Đang xử lý…\").font(.caption).foregroundStyle(.secondary)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đang đọc danh sách ứng dụng…",
+  "placeholders": [],
+  "context": [
+   "ProgressView(\"Đang đọc danh sách ứng dụng…\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã chọn",
+  "placeholders": [],
+  "context": [
+   "stat(\"Đã chọn\", ByteFormat.string(state.selectedSize()), .red)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã chọn %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Text(\"Đã chọn \\(ByteFormat.string(selected))\").font(.caption.bold()).foregroundStyle(.red)"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã chọn %lld mục",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Text(\"Đã chọn \\(selected.count) mục\").foregroundStyle(.secondary)",
+   "Text(\"Đã chọn \\(items.count) mục\")"
+  ],
+  "count": true
+ },
+ {
+  "key": "Đã dùng %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "legend(.blue, L(\"Đã dùng \\(ByteFormat.string(used))\"))"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã dọn xong, giải phóng %@.",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "return L(\"Đã dọn xong, giải phóng \\(ByteFormat.string(freed)).\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã giải phóng %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Text(\"Đã giải phóng \\(ByteFormat.string(entry.freed))\").font(.title2.bold())"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã giải phóng %@ từ %lld mục.",
+  "placeholders": [
+   "@",
+   "d"
+  ],
+  "context": [
+   "? L(\"Đã giải phóng \\(ByteFormat.string(run.freed)) từ \\(run.matched) mục.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã giải phóng %@; %lld mục lỗi.",
+  "placeholders": [
+   "@",
+   "d"
+  ],
+  "context": [
+   ": L(\"Đã giải phóng \\(ByteFormat.string(run.freed)); \\(run.errors.count) mục lỗi.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã gửi mã xác nhận tới %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "Text(\"Đã gửi mã xác nhận tới \\(emailHint)\")",
+   "Text(\"Đã gửi mã xác nhận tới \\(emailHint)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã hết hạn",
+  "placeholders": [],
+  "context": [
+   "case .expired: L(\"Đã hết hạn\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã kích hoạt",
+  "placeholders": [],
+  "context": [
+   "case .active: L(\"Đã kích hoạt\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đã mở bảng xác nhận cho %lld mục · %@.",
+  "placeholders": [
+   "d",
+   "@"
+  ],
+  "context": [
+   "return L(\"Đã mở bảng xác nhận cho \\(items.count) mục · \\(ByteFormat.string(items.reclaimable)).\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đường dẫn được bảo vệ, không xoá: %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "case .protectedPath(let p): L(\"Đường dẫn được bảo vệ, không xoá: \\(p)\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Đề xuất",
+  "placeholders": [],
+  "context": [
+   "case .propose: L(\"Đề xuất\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Để đo được Thùng rác, Mail, backup iPhone và dữ liệu của app khác, hãy cấp Full Disk Access cho OmitX.",
+  "placeholders": [],
+  "context": [
+   "Text(\"Để đo được Thùng rác, Mail, backup iPhone và dữ liệu của app khác, hãy cấp Full Disk Access cho OmitX.\")"
+  ],
+  "count": false
+ },
+ {
+  "key": "Độ sâu tối đa: %lld",
+  "placeholders": [
+   "d"
+  ],
+  "context": [
+   "Stepper(\"Độ sâu tối đa: \\(state.projectMaxDepth)\", value: $state.projectMaxDepth, in: 2...15)",
+   "Stepper(\"Độ sâu tối đa: \\(state.projectMaxDepth)\", value: $state.projectMaxDepth, in: 2...15)"
+  ],
+  "count": true
+ },
+ {
+  "key": "Ổ cứng sắp đầy — còn %@",
+  "placeholders": [
+   "@"
+  ],
+  "context": [
+   "post(title: L(\"Ổ cứng sắp đầy — còn \\(ByteFormat.string(free))\"),"
+  ],
+  "count": false
+ },
+ {
+  "key": "Ứng dụng",
+  "placeholders": [],
+  "context": [
+   "id: \"app:\\(app.url.path)\", title: \"\\(app.name).app\", detail: app.url.path, group: L(\"Ứng dụng\"),"
+  ],
+  "count": false
+ }
+]
